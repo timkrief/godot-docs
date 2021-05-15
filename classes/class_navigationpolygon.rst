@@ -35,7 +35,7 @@ Using :ref:`add_polygon<class_NavigationPolygon_method_add_polygon>` and indices
     var polygon = NavigationPolygon.new()
     var vertices = PoolVector2Array([Vector2(0, 0), Vector2(0, 50), Vector2(50, 50), Vector2(50, 0)])
     polygon.set_vertices(vertices)
-    var indices = PoolIntArray(0, 3, 1)
+    var indices = PoolIntArray([0, 3, 1])
     polygon.add_polygon(indices)
     $NavigationPolygonInstance.navpoly = polygon
 
